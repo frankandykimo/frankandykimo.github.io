@@ -1,0 +1,309 @@
+@charset "utf-8";
+/* line 3, ../sass/style_cht_v2.scss */
+body {
+  background-image: url(../images/cht_wifi/bg.png);
+  background-repeat: repeat;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+/* line 13, ../sass/style_cht_v2.scss */
+.img img {
+  vertical-align: bottom;
+}
+
+/* line 18, ../sass/style_cht_v2.scss */
+a:link {
+  color: red;
+  text-decoration: none;
+}
+
+a:visited  {
+  color: purple;
+  text-decoration: none;
+}
+
+/* line 22, ../sass/style_cht_v2.scss */
+a:hover {
+  color: #0000AA;
+  text-decoration: none;
+}
+
+/* line 28, ../sass/style_cht_v2.scss */
+.skin_Title {
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  height: 24px;
+  font-family: "微軟正黑體";
+  font-size: 20px;
+  background-color: #0099FF;
+}
+
+/* line 38, ../sass/style_cht_v2.scss */
+.tab_Title01 {
+  font-weight: normal;
+  text-decoration: none;
+  color: #000000;
+  height: 24px;
+  font-family: "微軟正黑體";
+  font-size: 16px;
+  background-color: #BFBFBF;
+}
+
+/* line 48, ../sass/style_cht_v2.scss */
+.tab_Title02 {
+  font-weight: normal;
+  text-decoration: none;
+  color: #000000;
+  height: 24px;
+  font-family: "微軟正黑體";
+  font-size: 16px;
+  background-color: #D5D5D5;
+}
+
+/* line 58, ../sass/style_cht_v2.scss */
+.tab_c01 {
+  font-weight: normal;
+  text-decoration: none;
+  color: #000;
+  height: 24px;
+  font-family: "微軟正黑體";
+  font-size: 24px;
+  background-color: #D5D5D5;
+}
+/* line 66, ../sass/style_cht_v2.scss */
+.tab_c01 div.tab_label {
+  font-weight: bold;
+}
+/* line 69, ../sass/style_cht_v2.scss */
+.tab_c01 div.account_type {
+  margin: 5% 0 5% 0;
+}
+
+/* line 74, ../sass/style_cht_v2.scss */
+.txt_r {
+  font-weight: bold;
+  text-decoration: none;
+  color: #FF0000;
+  height: 24px;
+  font-family: "微軟正黑體";
+  font-size: 20px;
+}
+
+/* line 83, ../sass/style_cht_v2.scss */
+.txt_b {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  height: 24px;
+  font-family: "微軟正黑體";
+  font-size: 16px;
+}
+
+/* line 92, ../sass/style_cht_v2.scss */
+.txt_ps {
+  font-weight: normal;
+  text-decoration: none;
+  color: #CC0000;
+  height: auto;
+  font-family: "微軟正黑體";
+  font-size: 24px;
+  margin: 10px 0px 10px 10px;
+}
+
+/* line 102, ../sass/style_cht_v2.scss */
+.txt {
+  font-weight: normal;
+  text-decoration: none;
+  color: #000000;
+  font-family: "微軟正黑體";
+  font-size: 17px;
+}
+/* line 109, ../sass/style_cht_v2.scss */
+.txt a:link {
+  color: #000;
+}
+/* line 112, ../sass/style_cht_v2.scss */
+.txt a:hover {
+  color: #0000aa;
+  font-weight: bold;
+}
+
+/* line 119, ../sass/style_cht_v2.scss */
+.input {
+  text-decoration: none;
+  color: #0066FF;
+  font-family: "微軟正黑體";
+  font-size: 24px;
+  width: 92%;
+}
+
+/* line 127, ../sass/style_cht_v2.scss */
+.check {
+  text-decoration: none;
+  color: #0066FF;
+  font-family: "微軟正黑體";
+  font-size: 16px;
+  height: 24px;
+  line-height: 20px;
+}
+
+/* line 136, ../sass/style_cht_v2.scss */
+.formNote {
+  width: 400px;
+  margin: 5px 0 5px 0;
+  text-align: right;
+}
+/* line 140, ../sass/style_cht_v2.scss */
+.formNote span {
+  font-size: 12px;
+  color: #222;
+  line-height: 20px;
+}
+/* line 144, ../sass/style_cht_v2.scss */
+.formNote a {
+  border: none;
+}
+/* line 147, ../sass/style_cht_v2.scss */
+.formNote img {
+  vertical-align: middle;
+  border: none;
+  margin-right: 3px;
+}
+
+/* line 154, ../sass/style_cht_v2.scss */
+.fpass {
+  width: 13px;
+  height: 21px;
+  text-align: center;
+  background: url(../images/cht_wifi/icon_fpass_1.png) no-repeat;
+  margin-bottom: 0px;
+}
+
+/* line 161, ../sass/style_cht_v2.scss */
+.enterBtn {
+  width: 245px;
+  height: 43px;
+  line-height: 40px;
+  text-align: center;
+  font-family: "微軟正黑體";
+  font-weight: bold;
+  background: url(../images/cht_wifi/bg_enterbtn_3.png) no-repeat;
+  margin-bottom: 5px;
+}
+/* line 168, ../sass/style_cht_v2.scss */
+.enterBtn a {
+  display: block;
+  width: 245px;
+  height: 43px;
+  font-size: 18px;
+}
+/* line 172, ../sass/style_cht_v2.scss */
+.enterBtn a:link {
+  color: #000;
+}
+/* line 175, ../sass/style_cht_v2.scss */
+.enterBtn a:visited {
+  color: #111;
+}
+/* line 178, ../sass/style_cht_v2.scss */
+.enterBtn a:hover {
+  color: #666;
+}
+
+/* line 184, ../sass/style_cht_v2.scss */
+.otpBtn {
+  width: 130px;
+  line-height: 40px;
+  text-align: center;
+  font-family: "微軟正黑體";
+  font-weight: bold;
+  background-color: forestgreen;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin: 5px;
+}
+/* line 191, ../sass/style_cht_v2.scss */
+.otpBtn:hover {
+  background-color: #1FB11F;
+  color: #ddd;
+}
+/* line 200, ../sass/style_cht_v2.scss */
+.otpBtn a:link {
+  color: #fff;
+}
+/* line 203, ../sass/style_cht_v2.scss */
+.otpBtn a:visited {
+  color: #fff;
+}
+
+/* line 209, ../sass/style_cht_v2.scss */
+.foot_1 {
+  width: 90px;
+  height: 30px;
+  background: url(../images/cht_wifi/foot_a.png) no-repeat;
+  margin: 0px 5px 0px 70px;
+  float: left;
+}
+
+/* line 216, ../sass/style_cht_v2.scss */
+.foot_2 {
+  width: 90px;
+  height: 30px;
+  background: url(../images/cht_wifi/foot_b.png) no-repeat;
+  margin: 0px 5px 0px 5px;
+  float: left;
+}
+
+/* line 223, ../sass/style_cht_v2.scss */
+.foot_3 {
+  width: 90px;
+  height: 30px;
+  background: url(../images/cht_wifi/foot_c.png) no-repeat;
+  margin: 0px 5px 0px 5px;
+  float: left;
+}
+
+/* line 230, ../sass/style_cht_v2.scss */
+.slideshow {
+  height: 60px;
+  width: 440px;
+  margin: 0;
+}
+/* line 232, ../sass/style_cht_v2.scss */
+.slideshow img {
+  padding: 0px;
+  border: 0px;
+}
+
+/* line 237, ../sass/style_cht_v2.scss */
+.link {
+  font-family: "微軟正黑體";
+}
+/* line 239, ../sass/style_cht_v2.scss */
+.link a {
+  font-size: 24px;
+}
+/* line 241, ../sass/style_cht_v2.scss */
+.link a:link {
+  color: #000;
+}
+/* line 244, ../sass/style_cht_v2.scss */
+.link a:visited {
+  color: #000;
+}
+/* line 247, ../sass/style_cht_v2.scss */
+.link a:hover {
+  color: #0000AA;
+  font-weight: bold;
+}
+
+/* line 254, ../sass/style_cht_v2.scss */
+.tab_c02 .operations {
+  float: right;
+  margin-left: 10px;
+}

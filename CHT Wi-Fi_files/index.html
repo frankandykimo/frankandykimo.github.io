@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html debug="true" lang="zh_tw"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>banner</title>
+<style type="text/css">
+<!--
+body {
+
+	background-repeat: repeat;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+<style type="text/css">
+.slideshow { height: 440px; width: 60px; margin: 0; }
+.slideshow img { padding: 0px; border: 0px; }
+</style>
+<!-- include jQuery library -->
+<script type="text/javascript" src="index_data/jquery_002.js"></script>
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="index_data/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+		      fx:    'fade',         
+          speed:  500,
+          random:  1,
+          pause: 1
+	});
+});
+</script>
+</head>
+<body>
+	<div class="slideshow" style="position: relative;">
+		<a href="https://wifi.hinet.net/online_purchase/index.php" target="_blank" style="background-color: rgb(0, 0, 0); position: absolute; top: 0px; left: 0px; z-index: 2; opacity: 1;"><img src="index_data/banner_2.jpg" width="440" height="60"></a>
+		<a href="http://wifi.hinet.net/pwlan/index.php/rates" target="_blank" style="background-color: rgb(0, 0, 0); position: absolute; top: 0px; left: 0px; display: none; z-index: 1;"><img src="index_data/banner_1.png" width="440" height="60"></a>
+	</div>
+
+
+
+</body></html>
