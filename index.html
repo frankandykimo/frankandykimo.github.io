@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh_tw"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=480">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>CHT Wi-Fi</title>
+<!--[if lt IE 9]>
+<script src="https://authweb.hinet.net/javascripts/html5shiv.js?date=20140102"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="CHT%20Wi-Fi_files/style_cht_v2.css">
+</head>
+<body>
+<table width="476" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tbody><tr>
+                <td valign="top" height="59" background="CHT%20Wi-Fi_files/sky_2.jpg">
+                        <table width="440" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tbody><tr>
+                                        <td>
+                                                <div id="lang_en" align="right">
+                                                                                                                        <a href="#"><img src="CHT%20Wi-Fi_files/b_en_01.png" name="Image1" class="enBtn" width="75" height="27" border="0"></a>
+                                                                                                        </div>
+                                        </td>
+                                </tr>
+                        </tbody></table>
+                </td>
+        </tr>
+        <tr>
+                <td valign="top">
+                        <div style="margin:3px;"></div>
+                        <table width="456" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tbody><tr>
+                                        <td class="img"><img src="CHT%20Wi-Fi_files/cont_bg_01.png" width="456" height="17"></td>
+                                </tr>
+                                <tr>
+                                        <td background="CHT%20Wi-Fi_files/cont_bg_02.png">
+                                                <table width="440" cellspacing="2" cellpadding="2" border="0" align="center">
+                                                        <tbody><tr class="skin_Title">
+                                                                <td colspan="2">
+                                                                        <div align="center">中華電信CHT Wi-Fi上網認證</div>
+                                                                </td>
+                                                        </tr>
+                                                        <tr>
+                                                                                                                        <td class="tab_c01" colspan="2">
+                                                                        <div class="tab_label account_type"><span class="txt_ps">*</span>請選擇上網身分：</div>
+                                                                </td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="tab_c01" colspan="2">
+                                                                        <div class="tab_label account_type">
+                                                                                <input name="seltype" value="行動門號" id="option1" checked="checked" onclick="seltype(1);" type="radio">
+                                                                                <span class="link"><a href="#" onclick="seltype(1);">中華行動門號/會員<br>&nbsp;&nbsp;&nbsp;&nbsp;(735簡訊認證請選此項)</a></span><br>
+                                                                        </div>
+                                                                        <div class="tab_label account_type">
+                                                                                <input name="seltype" value="HiNet" id="option2" onclick="seltype(2);" type="radio">
+                                                                                <span class="link"><a href="#" onclick="seltype(2);" class="link">HiNet或預付卡</a></span><br>
+                                                                        </div>
+                                                                        <div class="tab_label account_type">
+                                                                                <input name="seltype" value="漫遊" id="option4" onclick="seltype(3);" type="radio">
+                                                                                <span class="link"><a href="#" onclick="seltype(3);">漫遊</a></span><br>
+                                                                        </div>
+                                                                </td>
+                                                                                                                </tr>
+                                                </tbody></table>
+                                                <!--emome -->
+                                                <form id="emome" name="emome_form" onsubmit="return hinet_login(emome_form, 'e50d1bc602d7acb2dcf54de6df692c44');" method="post" action="https://member.cht.com.tw/CHTWifi/WifiAuthentication?actionurl=https%3A%2F%2Fwlangw.hinet.net%2Fv2_0%2Fcht_auth%2Fauth_page.php&amp;chsm=fdf87f5feb9b69c1d207b452504becd1" autocomplete="off">
+                                                        <table class="tabContent_emome" width="440" cellspacing="2" cellpadding="2" border="0" align="center">
+                                                                <tbody><tr id="emome1" style="display:;">
+                                                                        <td class="tab_c01" width="210">
+                                                                                <div class="tab_label" align="right"><span class="txt_ps">*</span>行動門號或會員帳號：</div>
+                                                                        </td>
+                                                                        <td class="tab_c01">
+                                                                                <input name="cht_user" class="input" size="20" value="範例：09xxxxxxxx" onfocus="if (value =='範例：09xxxxxxxx'){value =''}" onblur="if (value ==''){value='範例：09xxxxxxxx'}" type="text">
+                                                                        </td>
+                                                                </tr>
+                                                                <tr id="emome2" style="display:;">
+                                                                        <td class="tab_c01"><div class="tab_label" align="right"><span class="txt_ps">*</span>密碼：</div></td>
+                                                                        <td class="tab_c01"><input name="passwd" class="input" type="password"></td>
+                                                                </tr>
+                                                                <tr id="emome3" style="display:;">
+                                                                        <td class="tab_c01" colspan="2">
+                                                                                <div class="txt_ps" align="left">註1：中華手機客戶請輸入手機號碼及密碼登入，或手機直撥【735】(台積電MVPN客戶直撥【99735】)，以手機號碼及簡訊回傳之密碼登入。</div>
+                                                                                <div class="txt_ps" align="left">註2：中華電信會員請輸入會員帳號與密碼登入。</div>
+                                                                        </td>
+                                                                </tr>
+                                                                <tr id="emome4" style="display:;">
+                                                                        <td class="tab_c02" colspan="2" align="right">
+                                                                                <div class="operations">
+                                                                                        <input id="rememberme_emome" type="checkbox"><span class="txt"><label for="rememberme_emome">記住帳號密碼</label></span>
+                                                                                </div>
+                                                                                <div class="operations">
+                                                                                        <span class="txt">
+                                                                                                <a href="https://member.cht.com.tw/Users/forgot_password.jsp?finish_channelurl=http%3A%2F%2Fwww.hinet.net"><img src="CHT%20Wi-Fi_files/fpass.png" alt="" style="border: 0px;"><span><font color="red">忘記密碼</font></span></a>
+                                                                                        </span>
+                                                                                </div>
+                                                                        </td>
+                                                                </tr>
+                                                        </tbody></table>
+                                                        <input name="username" type="hidden">
+                                                        <input name="password" type="hidden">
+                                                        <input name="account" type="hidden">
+                                                        <input name="credential" type="hidden">
+                                                        <input name="session" value="" type="hidden">
+                                                        <input name="custom" value="cht" type="hidden">
+                                                </form>
+                                                <!--HiNet -->
+                                                <form id="hinet" name="hinet_form" onsubmit="return hinet_login(hinet_form, 'e50d1bc602d7acb2dcf54de6df692c44');" method="post" action="https://wlangw.hinet.net/v2_0/cht_auth/auth_page.php" autocomplete="off" style="display: none;">
+                                                        <table class="tabContent_hinet" width="440" cellspacing="2" cellpadding="2" border="0" align="center">
+                                                                <tbody><tr id="hinet1">
+                                                                        <td class="tab_c01" width="220">
+                                                                                <div class="tab_label" align="right"><span class="txt_ps">*</span>用戶識別碼(HN)<br>或預付卡帳號：</div>
+                                                                        </td>
+                                                                        <td class="tab_c01">
+                                                                                <input name="cht_user" class="input" size="20" value="範例：87654321" onfocus="if (value =='範例：87654321'){value =''}" onblur="if (value ==''){value='範例：87654321'}" type="text">
+                                                                        </td>
+                                                                </tr>
+                                                                <tr id="hinet2">
+                                                                        <td class="tab_c01"><div class="tab_label" align="right"><span class="txt_ps">*</span>密碼：</div></td>
+                                                                        <td class="tab_c01">
+                                                                                <input name="passwd" class="input" type="password">
+                                                                        </td>
+                                                                </tr>
+                                                                <tr id="hinet3">
+                                                                        <td class="tab_c01" colspan="2">
+                                                                                <div class="txt_ps" align="left">註：請輸入HiNet用戶識別碼(HN號碼)或CHT Wi-Fi預付卡帳號，然後輸入密碼。</div>
+                                                                        </td>
+                                                                </tr>
+                                                                <tr id="hinet4">
+                                                                        <td class="tab_c02" colspan="2" align="right">
+                                                                                <div class="operations">
+                                                                                        <input id="rememberme_hinet" type="checkbox">
+                                                                                        <span class="txt"><label for="rememberme_hinet">記住帳號密碼</label></span>
+                                                                                </div>
+                                                                                <div class="operations">
+                                                                                        <span class="txt">
+                                                                                                <img src="CHT%20Wi-Fi_files/dollar.png"><a href="https://wifi.hinet.net/online_purchase/index.php"><span><font color="red">購買預付卡</font></span></a>
+                                                                                        </span>
+                                                                                </div>
+                                                                                <div class="operations">
+                                                                                        <span id="act2" class="txt">
+                                                                                                <img src="CHT%20Wi-Fi_files/act.png"><a href="https://authweb.hinet.net/card/card/Wi-Fi_provision.html"><span><font color="red">申請開通預付卡</font></span></a>
+                                                                                        </span>
+                                                                                </div>
+                                                                        </td>
+                                                                </tr>
+                                                        </tbody></table>
+                                                        <input name="username" value="" type="hidden">
+                                                        <input name="password" value="" type="hidden">
+                                                        <input name="session" value="" type="hidden">
+                                                        <input name="custom" value="cht" type="hidden">
+                                                </form>
+                                                <!-- 漫遊 -->
+                                                <form id="roaming" name="roaming_form" onsubmit="return hinet_login(roaming_form, 'e50d1bc602d7acb2dcf54de6df692c44');" method="post" action="https://wlangw.hinet.net/v2_0/cht_auth/auth_page.php" autocomplete="off" style="display: none;">
+                                                        <table class="tabContent_roaming" width="440" cellspacing="2" cellpadding="2" border="0" align="center">
+                                                                <tbody><tr id="roaming1">
+                                                                        <td class="tab_c01" width="220">
+                                                                                <div align="right"><span class="txt_ps">*</span><span>請選擇漫遊服務<br>提供業者：</span></div>
+                                                                        </td>
+                                                                        <td class="tab_c01">
+                                                                                <select name="menu_roaming" onchange="doPartnerRedirect(this, res);">
+                                                                                        <option selected="selected" value="">請選擇漫遊業者</option>
+                                                                                        <optgroup label="企業帳號">
+                                                                                                <option value="">企業帳號</option>
+                                                                                                <option value="so-net/">So-net用戶</option>
+                                                                                        </optgroup>
+                                                                                        <optgroup label="漫遊業者">
+                                                                                                <option value="IPASS/">iPass</option>
+                                                                                                <option value="twroam/"></option>
+                                                                                        </optgroup>
+                                                                                        <optgroup label="電信業者(漫遊業者)">
+                                                                                                <option value="pccw/">1O1O / csl</option>
+                                                                                                <option value="y5/">Y5ZONE</option>
+                                                                                        </optgroup>
+                                                                                </select>
+                                                                                <div class="otpBtn" id="cmcc_otp" style="display: none;"><a href="#">動態密碼</a></div>
+                                                                        </td>
+                                                                </tr>
+                                                                <tr id="roaming2">
+                                                                        <td class="tab_c01">
+                                                                                <div id="origin_uname_label" align="right">
+                                                                                        <span class="txt_ps">*</span>帳號：                                                                                </div>
+                                                                                <div id="cmcc_uname_label" style="display: none;" align="right">
+                                                                                        <span class="txt_ps">*</span>行動門號：                                                                                </div>
+                                                                        </td>
+                                                                        <td class="tab_c01">
+                                                                                <input name="cht_user" class="input" type="text">
+                                                                        </td>
+                                                                </tr>
+                                                                <tr id="roaming3">
+                                                                        <td class="tab_c01">
+                                                                                <div align="right">
+                                                                                        <span class="txt_ps">*</span>密碼：                                                                                </div>
+                                                                        </td>
+                                                                        <td class="tab_c01">
+                                                                                <input name="passwd" class="input" type="password">
+                                                                        </td>
+                                                                </tr>
+                                                                <tr id="roaming4">
+                                                                        <td class="tab_c01" colspan="2">
+                                                                                <div class="txt_ps" align="left">註：請先選擇漫遊服務提供業者，再輸入帳號及密碼。</div>
+                                                                        </td>
+                                                                </tr>
+                                                        </tbody></table>
+                                                        <input name="username" type="hidden">
+                                                        <input name="password" type="hidden">
+                                                        <input name="session" value="" type="hidden">
+                                                        <input name="custom" value="cht" type="hidden">
+                                                </form>
+
+                                                <table width="440" cellspacing="2" cellpadding="2" border="0" align="center">
+                                                        <tbody><tr>
+                                                                <td colspan="2">
+                                                                        <div align="center">
+                                                                                <div style="margin: 10px 0 5px 0;">
+                                                                                        <!-- <div class="enterBtn" id="cmcc_otp" style="display: none;"><a href="#">取得OTP動態簡訊</a></div> -->
+                                                                                        <div class="enterBtn" id="submit"><a href="#">登入</a></div>
+                                                                                </div>
+                                                                        </div>
+                                                                </td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td colspan="2">
+                                                                        <div class="tabContent_emome">
+                                                                                <a href="https://wifi.hinet.net/pwlan/rates/index.html" class="foot_1" target="_blank"></a>
+                                                                                <a href="https://wifi.hinet.net/pwlan/how-to-use/steps.html" class="foot_2" target="_blank"></a>
+                                                                                <a href="https://wifi.hinet.net/online_purchase/index.php" class="foot_3" target="_blank"></a>
+                                                                        </div>
+                                                                </td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="txt_b" colspan="2">
+                                                                        <div style="margin:10px;" align="left">
+                                                                        
+                                                                        
+        </div>
+                                                                        <div style="margin:10px;" align="left">
+                                                                                註1：本服務登入成功即依使用分鐘數或優惠方案計費，請點閱<a href="https://wifi.hinet.net/pwlan/rates/index.html" target="_blank">【計費說明】</a>或洽客服專線0800-080123<br>註2:&nbsp;如欲結束(登出)CHT Wi-Fi上網，請於瀏覽器網址列輸入「<a href="http://88.wifi/">http://88.wifi/</a>」。                                                                        </div>
+                                                                </td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td colspan="2">
+                                                                        
+                                                                        
+        <iframe src="CHT%20Wi-Fi_files/index.html" marginwidth="0" #marginheight="0" scrolling="no" width="440" height="60" frameborder="0" align="middle">
+                                                                                </iframe>
+                                                                        
+                                                                </td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="txt_b" colspan="2">
+                                                                        <div style="margin:10px;" align="left">
+                                                                        
+        使用本服務即視為您已同意中華電信蒐集網際網路資訊使用行為記錄，將藉由資料之分析提供用戶更優質的服務。詳情請見<a target="blank" href="https://wifi.hinet.net/privacy.html">【隱私權保護政策】</a>說明。                                                                        </div>
+                                                                </td>
+                                                        </tr>
+                                                </tbody></table>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td><img src="CHT%20Wi-Fi_files/cont_bg_03.png" width="456" height="15"></td>
+                                </tr>
+                        </tbody></table>
+                </td>
+        </tr>
+</tbody></table>
+<script type="text/javascript" src="CHT%20Wi-Fi_files/jquery_002.js"></script>
+<script type="text/javascript" src="CHT%20Wi-Fi_files/jquery.js"></script>
+<script type="text/javascript" src="CHT%20Wi-Fi_files/cookie.js"></script>
+<script type="text/javascript" src="CHT%20Wi-Fi_files/auth.js"></script>
+<script type="text/javascript" src="CHT%20Wi-Fi_files/codec.js"></script>
+<script type="text/javascript" src="CHT%20Wi-Fi_files/change_product.js"></script>
+<script type="text/javascript" src="CHT%20Wi-Fi_files/main.js"></script>
+<script type="text/javascript">
+var login_form;
+jQuery(document).ready(function(){
+        res = {};
+        res.key = "e50d1bc602d7acb2dcf54de6df692c44";
+        res.host = "authweb.hinet.net";
+        res.client_ip = "100.64.106.118";
+        res.data = "";
+        res.eqs_vlanid = "1686.0";
+        res.gwip = "168.95.179.3";
+        res.gwport = "1/2/1:1686.0";
+        res.host = "authweb.hinet.net";
+        res.key = "e50d1bc602d7acb2dcf54de6df692c44";
+        res.loginurl = "https://wlangw.hinet.net/v2_0/cht_auth/auth_page.php";
+        res.session = "";
+        res.umac = "a0:99:9b:08:ad:35";
+        res.vendor = "cht";
+        res.vibo_nu = "";
+        res.base_url= "https://authweb.hinet.net/";
+        init(res);
+});
+</script>
+
+
+</body></html>
